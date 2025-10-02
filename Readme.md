@@ -57,7 +57,7 @@ El proyecto utiliza una **arquitectura por capas** sencilla que separa responsab
 ## 📋 Ejemplo – Uso de List<T>
 
 **Este ejemplo muestra cómo administrar una lista de nombres, permitiendo agregar, eliminar y ordenar elementos:**
-   ~~~~csharp 
+   ````csharp 
     List<string> listaNombres = new List<string>();
 
     // Agregar un nuevo nombre
@@ -90,7 +90,7 @@ El proyecto utiliza una **arquitectura por capas** sencilla que separa responsab
             dataGridView1.Rows.Add(nombre);
         }
     } 
-    ~~~
+````
 
 📌 ``List<T>`` permite almacenar colecciones dinámicas, ordenarlas con ``.Sort()`` y acceder a sus elementos de forma sencilla.
 
