@@ -90,7 +90,8 @@ El proyecto utiliza una **arquitectura por capas** sencilla que separa responsab
             dataGridView1.Rows.Add(nombre);
         }
     } 
-~
+    ~~~
+
 📌 ``List<T>`` permite almacenar colecciones dinámicas, ordenarlas con ``.Sort()`` y acceder a sus elementos de forma sencilla.
 
 ---
