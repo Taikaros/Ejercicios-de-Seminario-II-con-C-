@@ -13,7 +13,6 @@ namespace Ejercicio_de_Seminario
         List<string> listaNombres = new List<string>();
         private void FormEjListas_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btn_agregar_Click(object sender, EventArgs e)
@@ -48,6 +47,11 @@ namespace Ejercicio_de_Seminario
             {
                 dataGridView1.Rows.Add(nombre);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

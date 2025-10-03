@@ -37,7 +37,6 @@
             this.btn_Repositorio = new System.Windows.Forms.Button();
             this.btn_Ayuda = new System.Windows.Forms.Button();
             this.panelSubmenuEjemplos = new System.Windows.Forms.Panel();
-            this.btn_EjDictionary = new System.Windows.Forms.Button();
             this.btn_EjPila = new System.Windows.Forms.Button();
             this.btn_EjCola = new System.Windows.Forms.Button();
             this.btn_EjLista = new System.Windows.Forms.Button();
@@ -50,9 +49,9 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelDetalles = new System.Windows.Forms.Panel();
-            this.panelChildForms = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelChildForms = new System.Windows.Forms.Panel();
             this.panelMenuSlide.SuspendLayout();
             this.panelSubmenuAyuda.SuspendLayout();
             this.panelSubmenuEjemplos.SuspendLayout();
@@ -86,7 +85,7 @@
             this.btn_Salida.FlatAppearance.BorderSize = 0;
             this.btn_Salida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salida.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Salida.Location = new System.Drawing.Point(0, 627);
+            this.btn_Salida.Location = new System.Drawing.Point(0, 582);
             this.btn_Salida.Name = "btn_Salida";
             this.btn_Salida.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Salida.Size = new System.Drawing.Size(233, 45);
@@ -103,7 +102,7 @@
             this.panelSubmenuAyuda.Controls.Add(this.btn_Help);
             this.panelSubmenuAyuda.Controls.Add(this.btn_Repositorio);
             this.panelSubmenuAyuda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubmenuAyuda.Location = new System.Drawing.Point(0, 498);
+            this.panelSubmenuAyuda.Location = new System.Drawing.Point(0, 453);
             this.panelSubmenuAyuda.Name = "panelSubmenuAyuda";
             this.panelSubmenuAyuda.Size = new System.Drawing.Size(233, 129);
             this.panelSubmenuAyuda.TabIndex = 6;
@@ -162,7 +161,7 @@
             this.btn_Ayuda.FlatAppearance.BorderSize = 0;
             this.btn_Ayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ayuda.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Ayuda.Location = new System.Drawing.Point(0, 453);
+            this.btn_Ayuda.Location = new System.Drawing.Point(0, 408);
             this.btn_Ayuda.Name = "btn_Ayuda";
             this.btn_Ayuda.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_Ayuda.Size = new System.Drawing.Size(233, 45);
@@ -175,31 +174,14 @@
             // panelSubmenuEjemplos
             // 
             this.panelSubmenuEjemplos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelSubmenuEjemplos.Controls.Add(this.btn_EjDictionary);
             this.panelSubmenuEjemplos.Controls.Add(this.btn_EjPila);
             this.panelSubmenuEjemplos.Controls.Add(this.btn_EjCola);
             this.panelSubmenuEjemplos.Controls.Add(this.btn_EjLista);
             this.panelSubmenuEjemplos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubmenuEjemplos.Location = new System.Drawing.Point(0, 279);
             this.panelSubmenuEjemplos.Name = "panelSubmenuEjemplos";
-            this.panelSubmenuEjemplos.Size = new System.Drawing.Size(233, 174);
+            this.panelSubmenuEjemplos.Size = new System.Drawing.Size(233, 129);
             this.panelSubmenuEjemplos.TabIndex = 4;
-            // 
-            // btn_EjDictionary
-            // 
-            this.btn_EjDictionary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_EjDictionary.FlatAppearance.BorderSize = 0;
-            this.btn_EjDictionary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_EjDictionary.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_EjDictionary.Location = new System.Drawing.Point(0, 120);
-            this.btn_EjDictionary.Name = "btn_EjDictionary";
-            this.btn_EjDictionary.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_EjDictionary.Size = new System.Drawing.Size(233, 40);
-            this.btn_EjDictionary.TabIndex = 3;
-            this.btn_EjDictionary.Text = "Dictionary";
-            this.btn_EjDictionary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_EjDictionary.UseVisualStyleBackColor = true;
-            this.btn_EjDictionary.Click += new System.EventHandler(this.btn_EjDictionary_Click);
             // 
             // btn_EjPila
             // 
@@ -375,15 +357,16 @@
             this.panelDetalles.Size = new System.Drawing.Size(684, 50);
             this.panelDetalles.TabIndex = 1;
             // 
-            // panelChildForms
+            // label2
             // 
-            this.panelChildForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panelChildForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForms.Location = new System.Drawing.Point(250, 0);
-            this.panelChildForms.Name = "panelChildForms";
-            this.panelChildForms.Size = new System.Drawing.Size(684, 542);
-            this.panelChildForms.TabIndex = 2;
-            this.panelChildForms.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForms_Paint);
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(489, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(183, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Grupo 02: Cañete, Lang, Morel, Sosa";
             // 
             // label1
             // 
@@ -397,16 +380,15 @@
             this.label1.Text = "Desarrollado Por Codigo Universitaro ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label2
+            // panelChildForms
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(489, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Grupo 02: Cañete, Lang, Morel, Sosa";
+            this.panelChildForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panelChildForms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForms.Location = new System.Drawing.Point(250, 0);
+            this.panelChildForms.Name = "panelChildForms";
+            this.panelChildForms.Size = new System.Drawing.Size(684, 542);
+            this.panelChildForms.TabIndex = 2;
+            this.panelChildForms.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForms_Paint);
             // 
             // Aplicacion_Central
             // 
@@ -456,7 +438,6 @@
         private System.Windows.Forms.Button btn_Help;
         private System.Windows.Forms.Button btn_Repositorio;
         private System.Windows.Forms.Button btn_Salida;
-        private System.Windows.Forms.Button btn_EjDictionary;
         private System.Windows.Forms.Panel panelDetalles;
         private System.Windows.Forms.Panel panelChildForms;
         private System.Windows.Forms.PictureBox pictureBox1;

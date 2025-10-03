@@ -32,7 +32,7 @@ namespace Ejercicio_de_Seminario
             {
                 if (Cola.Count != 0)
                 {
-                    MessageBox.Show($"El ultimo elemento de la cola es: " + Cola.LastOrDefault(), "Información", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show($"El ultimo elemento de la cola es: " + Cola.Peek(), "Información", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
             catch (Exception ex)

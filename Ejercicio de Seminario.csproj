@@ -71,12 +71,6 @@
     <Compile Include="Ejemplos_de_Ejercicios\FormEjColas.Designer.cs">
       <DependentUpon>FormEjColas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ejemplos_de_Ejercicios\FormEjDictionary.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ejemplos_de_Ejercicios\FormEjDictionary.Designer.cs">
-      <DependentUpon>FormEjDictionary.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ejercicios\FormListas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,9 +96,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ejemplos_de_Ejercicios\FormEjColas.resx">
       <DependentUpon>FormEjColas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ejemplos_de_Ejercicios\FormEjDictionary.resx">
-      <DependentUpon>FormEjDictionary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejemplos_de_Ejercicios\FormEjListas.resx">
       <DependentUpon>FormEjListas.cs</DependentUpon>

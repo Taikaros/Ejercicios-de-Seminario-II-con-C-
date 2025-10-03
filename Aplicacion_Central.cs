@@ -103,13 +103,6 @@ namespace Ejercicio_de_Seminario
             Metodos.openPanelChildForm(new FormEjPilas(), panelChildForms, ref activeForm);
             Metodos.HideSubMenu(panelSubmenuEjercicios, panelSubmenuEjemplos, panelSubmenuAyuda);
         }
-
-        private void btn_EjDictionary_Click(object sender, System.EventArgs e)
-        {
-            Metodos.ClickSound();
-            Metodos.openPanelChildForm(new FormEjDictionary(), panelChildForms, ref activeForm);
-            Metodos.HideSubMenu(panelSubmenuEjercicios, panelSubmenuEjemplos, panelSubmenuAyuda);
-        }
         #endregion Botones de ejemplos
         #region botones de ayuda
         private void btn_Repositorio_Click(object sender, System.EventArgs e)

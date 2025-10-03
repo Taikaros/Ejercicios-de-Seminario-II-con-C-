@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace Ejercicio_de_Seminario
@@ -32,7 +31,7 @@ namespace Ejercicio_de_Seminario
             {
                 if (Pila.Count != 0)
                 {
-                    MessageBox.Show($"El ultimo elemento de la cola es: " + Pila.LastOrDefault(), "Información", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show($"El ultimo elemento de la cola es: " + Pila.Peek(), "Información", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
             catch (Exception ex)

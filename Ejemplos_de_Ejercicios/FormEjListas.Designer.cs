@@ -40,7 +40,9 @@
             this.btn_agregar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txb_Ingresar = new System.Windows.Forms.TextBox();
-            this.btn_VerDato = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -70,11 +72,13 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.btn_Ordenar);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.btn_Eliminar);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.btn_VerDato);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btn_agregar);
@@ -84,13 +88,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(228, 303);
             this.panel1.TabIndex = 11;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btn_Ordenar
             // 
             this.btn_Ordenar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Ordenar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ordenar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Ordenar.Location = new System.Drawing.Point(0, 243);
+            this.btn_Ordenar.Location = new System.Drawing.Point(0, 193);
             this.btn_Ordenar.Name = "btn_Ordenar";
             this.btn_Ordenar.Size = new System.Drawing.Size(228, 57);
             this.btn_Ordenar.TabIndex = 13;
@@ -102,7 +107,7 @@
             // 
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.label9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label9.Location = new System.Drawing.Point(0, 226);
+            this.label9.Location = new System.Drawing.Point(0, 176);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(228, 17);
             this.label9.TabIndex = 11;
@@ -112,7 +117,7 @@
             this.btn_Eliminar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Eliminar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Eliminar.Location = new System.Drawing.Point(0, 171);
+            this.btn_Eliminar.Location = new System.Drawing.Point(0, 121);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(228, 55);
             this.btn_Eliminar.TabIndex = 10;
@@ -124,7 +129,7 @@
             // 
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.label7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label7.Location = new System.Drawing.Point(0, 154);
+            this.label7.Location = new System.Drawing.Point(0, 104);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(228, 17);
             this.label7.TabIndex = 9;
@@ -156,7 +161,7 @@
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(228, 33);
             this.btn_agregar.TabIndex = 2;
-            this.btn_agregar.Text = "Agregar a la Cola";
+            this.btn_agregar.Text = "Agregar a la Lista";
             this.btn_agregar.UseVisualStyleBackColor = true;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
@@ -179,18 +184,32 @@
             this.txb_Ingresar.Size = new System.Drawing.Size(228, 20);
             this.txb_Ingresar.TabIndex = 0;
             // 
-            // btn_VerDato
+            // label1
             // 
-            this.btn_VerDato.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_VerDato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_VerDato.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_VerDato.Location = new System.Drawing.Point(0, 104);
-            this.btn_VerDato.Name = "btn_VerDato";
-            this.btn_VerDato.Size = new System.Drawing.Size(228, 50);
-            this.btn_VerDato.TabIndex = 6;
-            this.btn_VerDato.Text = "Ver Dato";
-            this.btn_VerDato.UseVisualStyleBackColor = true;
-            this.btn_VerDato.Click += new System.EventHandler(this.btn_VerDato_Click);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Location = new System.Drawing.Point(0, 284);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(228, 17);
+            this.label1.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label5.Location = new System.Drawing.Point(0, 267);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(228, 17);
+            this.label5.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.label6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label6.Location = new System.Drawing.Point(0, 250);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(228, 17);
+            this.label6.TabIndex = 14;
             // 
             // FormEjListas
             // 
@@ -224,6 +243,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txb_Ingresar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.Button btn_VerDato;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
