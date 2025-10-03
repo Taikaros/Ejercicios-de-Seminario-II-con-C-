@@ -44,9 +44,7 @@ namespace Ejercicio_de_Seminario
         {
             Metodos.ClickSound();
             Metodos.ShowSubMenu(panelSubmenuAyuda, panelSubmenuEjercicios, panelSubmenuEjemplos, panelSubmenuEjercicios);
-
         }
-
         private void btn_Salida_Click(object sender, System.EventArgs e)
         {
             Metodos.NotificacionSound();
@@ -117,7 +115,7 @@ namespace Ejercicio_de_Seminario
         private void btn_Repositorio_Click(object sender, System.EventArgs e)
         {
             Metodos.ClickSound();
-            string url = "www.google.com.ar";
+            string url = "Ejercicios-de-Seminario-II-con-C";
             Process.Start(url);
             Metodos.HideSubMenu(panelSubmenuEjercicios, panelSubmenuEjemplos, panelSubmenuAyuda);
         }
@@ -133,16 +131,8 @@ namespace Ejercicio_de_Seminario
         private void btn_Readme_Click(object sender, System.EventArgs e)
         {
             Metodos.ClickSound();
-            if (MessageBox.Show("¿Desea abrir el archivo README.txt?", "Abrir README", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                string urld = "README.txt";
-                Process.Start("notepad.exe", urld);
-            }
-            else if (MessageBox.Show("¿Desea abrir el archivo README.pdf?", "Abrir README", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                string pdf = "README.pdf";
-                Process.Start("AcroRd32.exe", pdf);
-            }
+            string url = "https://github.com/Taikaros/Ejercicios-de-Seminario-II-con-C-/blob/master/Readme.md";
+            Process.Start(url);
 
             Metodos.HideSubMenu(panelSubmenuEjercicios, panelSubmenuEjemplos, panelSubmenuAyuda);
         }
